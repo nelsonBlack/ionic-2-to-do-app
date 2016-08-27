@@ -1,0 +1,38 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>
+    To Do App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item-sliding *ngFor="let item of items">
+      <ion-item>
+        {{item}}
+      </ion-item>
+      <ion-item-options>
+        <button danger (click)="deleteItem(item)">
+          <ion-icon name="trash">Delete
+
+          </ion-icon>
+
+        </button>
+      </ion-item-options>
+
+    </ion-item-sliding>
+  </ion-list>
+ 
+</ion-content>
+<ion-footer>
+<ion-toolbar border-top>
+  
+    <button primary small outline (click)="addItem()"><ion-icon name="more">
+      </ion-icon>New Item</button>
+
+
+
+
+</ion-toolbar>
+</ion-footer>

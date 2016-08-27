@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar primary>
+    <ion-title>
+    Add Item
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class="home">
+    <ion-item>
+        <ion-input placeholder="Add a Task" [(ngModel)]="createdItem">
+
+        </ion-input>
+    </ion-item>
+    <button (click)="save()" small>Save</button>
+
+</ion-content>
+
+
+
